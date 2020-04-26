@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: Pyrebase3
+Version: 4.0.2
+Summary: A simple python wrapper for the Firebase API
+Home-page: https://github.com/acevedog/Pyrebase3
+Author: acevedog
+Author-email: UNKNOWN
+License: MIT
+Description: UNKNOWN
+Keywords: Firebase
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.4

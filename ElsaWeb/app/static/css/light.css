@@ -1,0 +1,30 @@
+html{
+	--state-icon-color: #44739e;
+    --state-icon-active-color: #FDD835;
+    --state-icon-unavailable-color: var(--disabled-text-color);
+}
+.state-card-dialog {
+    cursor: pointer;
+	 position: relative;
+    display: inline-block;
+    width: 100px;
+    color: #44739e;
+    height: 100px;
+    text-align: center;
+    background-size: cover;
+    line-height: 40px;
+    vertical-align: middle;
+    border-radius: 50%;
+}
+.ha-icon {
+    position: relative;
+    display: inline-block;
+    width: 4px;
+    color: #FDD835;
+    height: 100px;
+    text-align: center;
+    background-size: cover;
+    line-height: 40px;
+    vertical-align: middle;
+    border-radius: 0%;
+}

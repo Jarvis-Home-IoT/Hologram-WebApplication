@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<!--
+This is a starter template page. Use this page to start your new project from
+scratch. This page gets rid of all links and provides the needed markup only.
+-->
+<html>
+<head lang="ko">
+ <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Hologram Javis</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/static/css/AdminLTE.css">
+  <link rel="stylesheet" href="/static/css/bootstrap.css">
+  <!-- Font Awesome -->
+ <!-- <link rel="stylesheet" href="css/font-awesome.min.css"> -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="/static/css/ionicons.min.css">
+    <link rel="stylesheet" href="/static/css/weather-icons.css">
+  <!-- Theme style -->
+  <!-- AdminLTE Skins. We have chosen the skin-blue for this starter
+        page. However, you can choose any other skin. Make sure you
+        apply the skin class to the body tag so the changes take effect. -->
+  <link rel="stylesheet" href="/static/css/skin-blue.min.css">
+  <link rel="stylesheet" href="/static/css/_all-skins.min.css">
+   <link rel="stylesheet" href="/static/css/onoff.css">
+    <link rel="stylesheet" href="/static/css/light.css">
+  <link rel="stylesheet" href="/static/css/style.css">
+   <link rel="stylesheet" href="/static/css/weather.css">
+     <link rel="stylesheet" href="/static/css/bootstrap-extend.css">
+       <link rel="stylesheet" href="/static/css/music.css">
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Google Font -->
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+</head>
+<!--
+BODY TAG OPTIONS:
+=================
+Apply one or more of the following classes to get the
+desired effect
+|---------------------------------------------------------|
+| SKINS         | skin-blue                               |
+|               | skin-black                              |
+|               | skin-purple                             |
+|               | skin-yellow                             |
+|               | skin-red                                |
+|               | skin-green                              |
+|---------------------------------------------------------|
+|LAYOUT OPTIONS | fixed                                   |
+|               | layout-boxed                            |
+|               | layout-top-nav                          |
+|               | sidebar-collapse                        |
+|               | sidebar-mini                            |
+|---------------------------------------------------------|
+-->
+<body class="hold-transition skin-blue sidebar-mini">
+<div class="wrapper">
+
+  <!-- Main Header -->
+  <header class="main-header">
+
+    <!-- Logo -->
+    <a href="index2.html" class="logo">
+      <!-- mini logo for sidebar mini 50x50 pixels -->
+      <span class="logo-mini"><b>J</b>V</span>
+      <!-- logo for regular state and mobile devices -->
+      <span class="logo-lg"><b>Javis</b><b> HomeAssistant</b></span>
+    </a>
+
+    <!-- Header Navbar -->
+    <nav class="navbar navbar-static-top" role="navigation">
+      <!-- Sidebar toggle button-->
+      <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+        <span class="sr-only">Toggle navigation</span>
+      </a>
+      <!-- Navbar Right Menu -->
+      <div class="navbar-custom-menu">
+        <ul class="nav navbar-nav">
+          <!-- Messages: style can be found in dropdown.less-->
+          <li class="dropdown messages-menu">
+            <!-- Menu toggle button -->
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <i class="fa fa-envelope-o"></i>
+              <span class="label label-success">4</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="header">You have 4 messages</li>
+              <li>
+                <!-- inner menu: contains the messages -->
+                <ul class="menu">
+                  <li><!-- start message -->
+                    <a href="#">
+                      <div class="pull-left">
+                        <!-- User Image -->
+
+                      </div>
+                      <!-- Message title and timestamp -->
+                      <h4>
+                        Support Team
+                        <small><i class="fa fa-clock-o"></i> 5 mins</small>
+                      </h4>
+                      <!-- The message -->
+                      <p>Why not buy a new awesome theme?</p>
+                    </a>
+                  </li>
+                  <!-- end message -->
+                </ul>
+                <!-- /.menu -->
+              </li>
+              <li class="footer"><a href="#">See All Messages</a></li>
+            </ul>
+          </li>
+          <!-- /.messages-menu -->
+
+          <!-- Notifications Menu -->
+          <li class="dropdown notifications-menu">
+            <!-- Menu toggle button -->
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <i class="fa fa-bell-o"></i>
+              <span class="label label-warning">10</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="header">You have 10 notifications</li>
+              <li>
+                <!-- Inner Menu: contains the notifications -->
+                <ul class="menu">
+                  <li><!-- start notification -->
+                    <a href="#">
+                      <i class="fa fa-users text-aqua"></i> 5 new members joined today
+                    </a>
+                  </li>
+                  <!-- end notification -->
+                </ul>
+              </li>
+              <li class="footer"><a href="#">View all</a></li>
+            </ul>
+          </li>
+          <!-- Tasks Menu -->
+          <li class="dropdown tasks-menu">
+            <!-- Menu Toggle Button -->
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <i class="fa fa-flag-o"></i>
+              <span class="label label-danger">9</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="header">You have 9 tasks</li>
+              <li>
+                <!-- Inner menu: contains the tasks -->
+                <ul class="menu">
+                  <li><!-- Task item -->
+                    <a href="#">
+                      <!-- Task title and progress text -->
+                      <h3>
+                        Design some buttons
+                        <small class="pull-right">20%</small>
+                      </h3>
+                      <!-- The progress bar -->
+                      <div class="progress xs">
+                        <!-- Change the css width attribute to simulate progress -->
+                        <div class="progress-bar progress-bar-aqua" style="width: 20%" role="progressbar"
+                             aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                          <span class="sr-only">20% Complete</span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <!-- end task item -->
+                </ul>
+              </li>
+              <li class="footer">
+                <a href="#">View all tasks</a>
+              </li>
+            </ul>
+          </li>
+          <!-- User Account Menu -->
+          <li class="dropdown user user-menu">
+            <!-- Menu Toggle Button -->
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <!-- The user image in the navbar-->
+              <!-- hidden-xs hides the username on small devices so only the image appears. -->
+              <span class="hidden-xs">Choi Hyeyeon</span>
+            </a>
+            <ul class="dropdown-menu">
+              <!-- The user image in the menu -->
+              <li class="user-header">
+                <img src="/static/img/girl.png" class="img-circle" alt="User Image" width = "10">
+                <p>
+                  Alexander Pierce - Web Developer
+                  <small>Member since Nov. 2012</small>
+                </p>
+              </li>
+              <!-- Menu Body -->
+              <li class="user-body">
+                <div class="row">
+                  <div class="col-xs-4 text-center">
+                    <a href="#">Followers</a>
+                  </div>
+                  <div class="col-xs-4 text-center">
+                    <a href="#">Sales</a>
+                  </div>
+                  <div class="col-xs-4 text-center">
+                    <a href="#">Friends</a>
+                  </div>
+                </div>
+                <!-- /.row -->
+              </li>
+              <!-- Menu Footer-->
+              <li class="user-footer">
+                <div class="pull-left">
+                  <a href="#" class="btn btn-default btn-flat">Profile</a>
+                </div>
+                <div class="pull-right">
+                  <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <!-- Control Sidebar Toggle Button -->
+          <li>
+            <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- Left side column. contains the logo and sidebar -->
+  <aside class="main-sidebar">
+
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+
+      <!-- Sidebar user panel (optional) -->
+      <div class="user-panel">
+        <div class="pull-left image">
+          <img src="/static/img/girl.png" class="img-circle" alt="User Image">
+        </div>
+        <div class="pull-left info">
+          <p>Choi Hyeyeon</p>
+          <!-- Status -->
+          <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+        </div>
+      </div>
+
+      <!-- search form (Optional) -->
+      <form action="#" method="get" class="sidebar-form">
+        <div class="input-group">
+          <input type="text" name="q" class="form-control" placeholder="Search...">
+          <span class="input-group-btn">
+              <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
+              </button>
+            </span>
+        </div>
+      </form>
+      <!-- /.search form -->
+
+      <!-- Sidebar Menu -->
+      <ul class="sidebar-menu" data-widget="tree">
+        <li class="header">HEADER</li>
+        <!-- Optionally, you can add icons to the links -->
+        <li class="active"><a href="#"><i class="fa fa-link"></i> <span>Home</span></a></li>
+        <li><a href="#"><i class="fa fa-link"></i> <span>Setting</span></a></li>
+        <li class="treeview">
+          <a href="#"><i class="fa fa-link"></i> <span>Made</span>
+            <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+              </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="#">Link in level 2</a></li>
+            <li><a href="#">Link in level 2</a></li>
+          </ul>
+        </li>
+      </ul>
+      <!-- /.sidebar-menu -->
+    </section>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <h1>
+        Home-Assistant
+        <small>Javis Hologram</small>
+      </h1>
+      <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> Level</a></li>
+        <li class="active">Here</li>
+      </ol>
+    </section>
+    <!-- Main content -->
+    <section class="content container-fluid">
+
+	<div class="col-md-4">
+	<div class="box box-weight">
+            <div class="box-header">
+            </div>
+			<div class="box-body">
+				<p>Hologram Javis</p>
+				<p>Welcome to Javis - HomeAssistant!!</p>
+			</div>
+	</div>
+
+	<div class="box box-primary direct-chat direct-chat-primary">
+           <div class="box-header">
+              <h3 class="box-title">Light</h3>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body no-padding">
+              <table class="table table-condensed">
+                <tr>
+                  <td>LED</td>
+                  <td>
+					<div class="can-toggle can-toggle--size-small">
+					<input id="a" type="checkbox">
+					<label for="a">
+
+					<div class="can-toggle__switch" data-checked="On" data-unchecked="Off"></div>
+					<div class="can-toggle__label-text"></div>
+					</label>
+					</div>
+
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>Kitchen Room</td>
+                  <td>
+					<div class="can-toggle can-toggle--size-small">
+					<input id="b" type="checkbox">
+					<label for="b">
+					<div class="can-toggle__switch" data-checked="On" data-unchecked="Off"></div>
+					<div class="can-toggle__label-text"></div>
+					</label>
+					</div>
+
+                  </td>
+                </tr>
+                <tr>
+                  <td>My room</td>
+                  <td>
+					<div class="can-toggle can-toggle--size-small">
+					<input id="c" type="checkbox">
+					<label for="c">
+					<div class="can-toggle__switch" data-checked="On" data-unchecked="Off"></div>
+					<div class="can-toggle__label-text"></div>
+					</label>
+					</div>
+
+                  </td>
+                </tr>
+                <tr>
+                  <td>Strip</td>
+					<td>
+					<div class="can-toggle can-toggle--size-small">
+					<input id="d" type="checkbox">
+					<label for="d">
+					<div class="can-toggle__switch" data-checked="On" data-unchecked="Off"></div>
+					<div class="can-toggle__label-text"></div>
+					</label>
+					</div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+
+          <!-- DIRECT CHAT PRIMARY -->
+          <div class="box box-primary direct-chat direct-chat-primary">
+            <div class="box-header with-border">
+              <h3 class="box-title">Alarm List</h3>
+            </div>
+     <div class="box-body no-padding">
+   <table class="table table-condensed">
+                <tr>
+                  <th style="width: 10px">#</th>
+                  <th>Date</th>
+                  <th>Time</th>
+                  <th >ON/OFF</th>
+                </tr>
+                <tr>
+                  <td>1.</td>
+                  <td>2019-09-05</td>
+                  <td>03:55</td>
+                  <td></td>
+                </tr>
+                 <tr>
+                  <td>2.</td>
+                  <td>2019-09-05</td>
+                  <td>03:55</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>3.</td>
+                  <td>2019-09-05</td>
+                  <td>03:55</td>
+                  <td></td>
+                </tr>
+                 <tr>
+                  <td>4.</td>
+                   <td>2019-09-05</td>
+                  <td>03:55</td>
+                  <td></td>
+                </tr>
+              </table>
+     </div></div></div>
+		 <!--light finish-->
+  <!-- Small boxes (Stat box) -->
+
+
+		 <div class="col-md-4">
+          <!-- DIRECT CHAT PRIMARY -->
+          <div class="box box-primary direct-chat direct-chat-primary">
+            <div class="box-header with-border">
+              <h3 class="box-title">Weather</h3>
+			  </div>
+			<div class="box-body">
+
+              <!-- 여기까지 새로추가한 곳 -->
+        <div class="col-lg-12 col-xs-8">
+          <!-- small box -->
+          <div class="small-box bg-aqua">
+            <div class = "appendweather">
+                <div class = "temp">
+            <div class="small-box-footer">
+              {{todayWeather[5]}}
+            </div>
+
+             <div class="icon">
+               <img class = "weather_widget" id = "image" src = "/static/img/ws1.png"/>
+            </div>
+
+            <div class="inner">
+              <h3 >{{todayWeather[0]}}</h3>
+              <p>{{todayWeather[1]}}</p>
+              <p>{{todayWeather[2]}}</p>
+              <p>{{todayWeather[3]}}</p>
+            </div>
+      <div class="ban-left-grids">
+				<div class="ban-left-grid">
+					<h5>{{weather_info[0]}}</h5>
+					<img class = "weather_widget2" id = "image1" src = "/static/img/ws1.png"/>
+
+                    <img class = "weather_widget2" id = "image11" src = "/static/img/ws1.png"/>
+					<p>{{weather_info[1]}}</p>
+				</div>
+				<div class="ban-left-grid">
+					<h5>{{weather_info[2]}}</h5>
+					<img class = "weather_widget2"id = "image2" src = "/static/img/ws1.png"/>
+                  <img class = "weather_widget2"id = "image22" src = "/static/img/ws1.png"/>
+					<p>{{weather_info[3]}}</p>
+				</div>
+				<div class="ban-left-grid">
+					<h5>{{weather_info[4]}}</h5>
+					<img class = "weather_widget2" id = "image3" src = "/static/img/ws1.png"/>
+                  <img class = "weather_widget2" id = "image33" src = "/static/img/ws1.png"/>
+					<p>{{weather_info[5]}}</p>
+				</div>
+  	            <div class="ban-left-grid">
+					<h5>{{weather_info[6]}}</h5>
+					<img class = "weather_widget2" id = "image4" src = "/static/img/ws1.png"/>
+                   <img class = "weather_widget2" id = "image44" src = "/static/img/ws1.png"/>
+					<p>{{weather_info[7]}}</p>
+				</div>
+  	                <div class="ban-left-grid">
+					<h5>{{weather_info[8]}}</h5>
+					<img class = "weather_widget2" id = "image5" src = "/static/img/ws1.png"/>
+                      <img class = "weather_widget2" id = "image55" src = "/static/img/ws1.png"/>
+    	                <p>{{weather_info[9]}}</p>
+                  </div>
+                <div class="clearfix"></div>
+            </div>
+            </div>
+                </div>
+<script>
+ image = document.getElementById('image');
+   image1 = document.getElementById('image1');
+    image11 = document.getElementById('image11');
+    image2 = document.getElementById('image2');
+    image22 = document.getElementById('image22');
+    image3 = document.getElementById('image3');
+     image33 = document.getElementById('image33');
+     image4 = document.getElementById('image4');
+     image44 = document.getElementById('image44');
+     image5 = document.getElementById('image5');
+     image55 = document.getElementById('image55');
+image.src = '/static/img/' +'{{weekdayImg[0]}}'+'.png' ;
+image1.src = '/static/img/' +'{{weekdayImg[0]}}'+'.png' ;
+    image11.src = '/static/img/' +'{{weekdayImg[1]}}'+'.png' ;
+    image2.src = '/static/img/' +'{{weekdayImg[2]}}'+'.png' ;
+    image22.src = '/static/img/' +'{{weekdayImg[3]}}'+'.png' ;
+    image3.src = '/static/img/' +'{{weekdayImg[4]}}'+'.png' ;
+    image33.src = '/static/img/' +'{{weekdayImg[5]}}'+'.png' ;
+    image4.src = '/static/img/' +'{{weekdayImg[6]}}'+'.png' ;
+    image44.src = '/static/img/' +'{{weekdayImg[7]}}'+'.png' ;
+    image5.src = '/static/img/' +'{{weekdayImg[8]}}'+'.png' ;
+    image55.src = '/static/img/' +'{{weekdayImg[9]}}'+'.png' ;</script>
+
+
+
+
+            <a href="#" class="small-box-footer">
+              More info <i class="fa fa-arrow-circle-right"></i>
+            </a>
+
+        </div>
+
+          </div>
+
+            </div>
+
+        <!-- ./col -->
+
+			</div>
+			</div>
+
+
+	<!-- Direct Chat -->
+        <div class="col-md-4">
+          <!-- DIRECT CHAT PRIMARY -->
+          <div class="box box-primary direct-chat direct-chat-primary">
+            <div class="box-header with-border">
+              <h3 class="box-title">Chatting with Javis</h3>
+
+              <div class="box-tools pull-right">
+                <span data-toggle="tooltip" title="3 New Messages" class="badge bg-light-blue">3</span>
+                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+                </button>
+                <button type="button" class="btn btn-box-tool" data-toggle="tooltip" title="Contacts" data-widget="chat-pane-toggle">
+                  <i class="fa fa-comments"></i></button>
+                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+              </div>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+              <!-- Conversations are loaded here -->
+              <div class="direct-chat-messages">
+                <!-- Message. Default to the left -->
+                <div class="direct-chat-msg">
+                  <div class="direct-chat-info clearfix">
+                    <span class="direct-chat-name pull-left">Javis</span>
+                    <span class="direct-chat-timestamp pull-right">
+                      <script>getTimeStamp()</script></span>
+                  </div>
+                  <!-- /.direct-chat-info -->
+                  <img class="direct-chat-img" src="/static/img/javis.png" alt="Message User Image"><!-- /.direct-chat-img -->
+                  <div class="direct-chat-text">
+                   좋은 하루 보내!
+                  </div>
+                  <!-- /.direct-chat-text -->
+                </div>
+                <!-- /.direct-chat-msg -->
+
+                <!-- /.direct-chat-msg -->
+              </div>
+              <!--/.direct-chat-messages-->
+
+              <!-- Contacts are loaded here -->
+              <div class="direct-chat-contacts">
+                <ul class="contacts-list">
+                  <li>
+                    <a href="#">
+                      <img class="contacts-list-img" src="/static/img/girl.png" alt="User Image">
+
+                      <div class="contacts-list-info">
+                            <span class="contacts-list-name">
+                              Count Dracula
+                              <small class="contacts-list-date pull-right">2/28/2015</small>
+                            </span>
+                        <span class="contacts-list-msg">How have you been? I was...</span>
+                      </div>
+                      <!-- /.contacts-list-info -->
+                    </a>
+                  </li>
+                  <!-- End Contact Item -->
+                </ul>
+                <!-- /.contatcts-list -->
+              </div>
+              <!-- /.direct-chat-pane -->
+            </div>
+            <!-- /.box-body -->
+            <div class="box-footer">
+             <!-- <form action="#" method="post"> -->
+              <form id = "target2">
+                <div class="input-group">
+                  <input type="text" name="message" placeholder="Type Message ..." class="form-control" id = "input_message2">
+                      <span class="input-group-btn">
+                        <button type="submit" class="btn btn-primary btn-flat">Send</button>
+                      </span>
+                </div>
+              </form>
+            </div>
+            <!-- /.box-footer-->
+          </div>
+          <!--/.direct-chat -->
+   <div class="col-md-13">
+       <div class="box box-primary direct-chat direct-chat-primary">
+            <div class="box-header with-border">
+               <h3 class="box-title">Music</h3>
+
+    <!-- Tracks used in this music/audio player application are free to use. I downloaded them from Soundcloud and NCS websites. I am not the owner of these tracks. -->
+<!-- Tracks used in this music/audio player application are free to use. I downloaded them from Soundcloud and NCS websites. I am not the owner of these tracks. -->
+
+    <div id="app-cover">
+        <div id="player">
+            <div id="player-track">
+                <div id="album-name"></div>
+                <div id="track-name"></div>
+                <div id="track-time">
+                    <div id="current-time"></div>
+                    <div id="track-length"></div>
+                </div>
+                <div id="s-area">
+                    <div id="ins-time"></div>
+                    <div id="s-hover"></div>
+                    <div id="seek-bar"></div>
+                </div>
+            </div>
+            <div id="player-content">
+                <div id="album-art">
+                    <img src="https://raw.githubusercontent.com/himalayasingh/music-player-1/master/img/_1.jpg" class="active" id="_1">
+                    <img src="https://raw.githubusercontent.com/himalayasingh/music-player-1/master/img/_2.jpg" id="_2">
+                    <img src="https://raw.githubusercontent.com/himalayasingh/music-player-1/master/img/_3.jpg" id="_3">
+                    <img src="https://raw.githubusercontent.com/himalayasingh/music-player-1/master/img/_4.jpg" id="_4">
+                    <img src="https://raw.githubusercontent.com/himalayasingh/music-player-1/master/img/_5.jpg" id="_5">
+                    <div id="buffer-box">Buffering ...</div>
+                </div>
+                <div id="player-controls">
+                    <div class="control">
+                        <div class="button" id="play-previous">
+                            <i class="fa fa-backward"></i>
+                        </div>
+                    </div>
+                    <div class="control">
+                        <div class="button" id="play-pause-button">
+                            <i class="fa fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="control">
+                        <div class="button" id="play-next">
+                            <i class="fa fa-forward"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+       </div></div></div>
+
+        <!-- /.col -->
+      <!--------------------------
+        | Your Page Content Here |
+        -------------------------->
+    <!-- /.content -->
+  <!-- /.content-wrapper -->
+    </section>
+  </div>
+  <!-- Main Footer -->
+  <footer class="main-footer">
+    <!-- To the right -->
+    <div class="pull-right hidden-xs">
+      Anything you want
+    </div>
+    <!-- Default to the left -->
+    <strong>Copyright &copy; 2016 <a href="#">Company</a>.</strong> All rights reserved.
+  </footer>
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Create the tabs -->
+    <ul class="nav nav-tabs nav-justified control-sidebar-tabs">
+      <li class="active"><a href="#control-sidebar-home-tab" data-toggle="tab"><i class="fa fa-home"></i></a></li>
+      <li><a href="#control-sidebar-settings-tab" data-toggle="tab"><i class="fa fa-gears"></i></a></li>
+    </ul>
+    <!-- Tab panes -->
+    <div class="tab-content">
+      <!-- Home tab content -->
+      <div class="tab-pane active" id="control-sidebar-home-tab">
+        <h3 class="control-sidebar-heading">Recent Activity</h3>
+        <ul class="control-sidebar-menu">
+          <li>
+            <a href="javascript:;">
+              <i class="menu-icon fa fa-birthday-cake bg-red"></i>
+
+              <div class="menu-info">
+                <h4 class="control-sidebar-subheading">Langdon's Birthday</h4>
+
+                <p>Will be 23 on April 24th</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <!-- /.control-sidebar-menu -->
+
+        <h3 class="control-sidebar-heading">Tasks Progress</h3>
+        <ul class="control-sidebar-menu">
+          <li>
+            <a href="javascript:;">
+              <h4 class="control-sidebar-subheading">
+                Custom Template Design
+                <span class="pull-right-container">
+                    <span class="label label-danger pull-right">70%</span>
+                  </span>
+              </h4>
+
+              <div class="progress progress-xxs">
+                <div class="progress-bar progress-bar-danger" style="width: 70%"></div>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <!-- /.control-sidebar-menu -->
+      </div>
+      <!-- /.tab-pane -->
+      <!-- Stats tab content -->
+      <div class="tab-pane" id="control-sidebar-stats-tab">Stats Tab Content</div>
+      <!-- /.tab-pane -->
+      <!-- Settings tab content -->
+      <div class="tab-pane" id="control-sidebar-settings-tab">
+        <form method="post">
+          <h3 class="control-sidebar-heading">General Settings</h3>
+
+          <div class="form-group">
+            <label class="control-sidebar-subheading">
+              Report panel usage
+              <input type="checkbox" class="pull-right" checked>
+            </label>
+
+            <p>
+              Some information about this general settings option
+            </p>
+          </div>
+          <!-- /.form-group -->
+        </form>
+      </div>
+      <!-- /.tab-pane -->
+    </div>
+  </aside>
+  <!-- /.control-sidebar -->
+  <!-- Add the sidebar's background. This div must be placed
+  immediately after the control sidebar -->
+  <div class="control-sidebar-bg"></div>
+</div>
+<!-- ./wrapper -->
+
+<!-- REQUIRED JS SCRIPTS -->
+
+<!-- jQuery 3 -->
+<script src="/static/js/jquery.min.js"></script>
+<!-- Bootstrap 3.3.7 -->
+<script src="/static/js/bootstrap.min.js"></script>
+<!-- AdminLTE App -->
+<script src="/static/js/adminlte.min.js"></script>
+<!-- Slimscroll -->
+<script src="/static/js/jquery.slimscroll.min.js"></script>
+<!-- FastClick -->
+<script src="/static/js/fastclick.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="/static/js/demo.js"></script>
+<script src="/static/js/custom.js"></script>
+<script src="/static/js/weather.js"></script>
+<script src="/static/js/music.js"></script>
+<!-- Optionally, you can add Slimscroll and FastClick plugins.
+     Both of these plugins are recommended to enhance the
+     user experience. -->
+</body>
+</html>

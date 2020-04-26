@@ -1,0 +1,19 @@
+Metadata-Version: 2.0
+Name: firebase-client
+Version: 0.1
+Summary: Python Firebase Client
+Home-page: https://github.com/Qotto/firebase-client
+Author: Alexandre Syenchuk
+Author-email: alexpirine@gmail.com
+License: New BSD License
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+
+UNKNOWN
+
+

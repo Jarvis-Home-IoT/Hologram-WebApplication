@@ -1,0 +1,253 @@
+AWSTemplateFormatVersion: '2010-09-09'
+
+Transform: AWS::Serverless-2016-10-31
+
+Parameters:
+  BucketName:
+    Description: >
+      Friendly name for artifact bucket.
+    Type: String
+    Default: ''
+  Version:
+    Description: >
+      Vendor application version.
+    Type: String
+    Default: '0'
+
+Mappings:
+  BuildProxy:
+    us-east-1:
+      # amzn-ami-hvm-2017.03.1.20170812-x86_64-gp2 == Lambda AMI
+      AmiId: ami-4fffc834
+    us-east-2:
+      AmiId: ami-ea87a78f
+    us-west-1:
+      AmiId: ami-3a674d5a
+    us-west-2:
+      AmiId: ami-aa5ebdd2
+    ca-central-1:
+      AmiId: ami-5ac17f3e
+    eu-west-1:
+      AmiId: ami-ebd02392
+    eu-central-1:
+      AmiId: ami-657bd20a
+    eu-west-2:
+      AmiId: ami-489f8e2c
+    ap-southeast-1:
+      AmiId: ami-fdb8229e
+    ap-southeast-2:
+      AmiId: ami-30041c53
+    ap-northeast-2:
+      AmiId: ami-8663bae8
+    ap-northeast-1:
+      AmiId: ami-4af5022c
+    ap-south-1:
+      AmiId: ami-d7abd1b8
+    sa-east-1:
+      AmiId: ami-d27203be
+
+Conditions:
+  NoBucketName: !Equals [ !Ref BucketName, '' ]
+
+Resources:
+  Packages:
+    Type: AWS::S3::Bucket
+    Properties:
+      AccessControl: PublicRead
+      BucketName: !If [ NoBucketName, !Ref 'AWS::NoValue', !Ref BucketName ]
+  BuildProxyRole:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: ec2.amazonaws.com
+            Action: sts:AssumeRole
+      Policies:
+        - PolicyDocument:
+            Version: '2012-10-17'
+            Statement:
+              - Effect: Allow
+                Action:
+                  - s3:GetObject
+                  - s3:PutObject
+                Resource: !Join [ '/', [ !GetAtt Packages.Arn, '*' ] ]
+          PolicyName: PackagesBucketAccess
+  BuildProxyProfile:
+    Type: AWS::IAM::InstanceProfile
+    Properties:
+      Roles:
+        - !Ref BuildProxyRole
+  VendRole:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          Effect: Allow
+          Principal:
+            Service: lambda.amazonaws.com
+          Action: sts:AssumeRole
+      ManagedPolicyArns:
+        - arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole
+      Policies:
+        -
+          PolicyDocument:
+            Version: '2012-10-17'
+            Statement:
+              -
+                Effect: Allow
+                Action: s3:ListBucket
+                Resource: !GetAtt Packages.Arn
+              -
+                Effect: Allow
+                Action:
+                  - s3:GetObject
+                  - s3:PutObject
+                Resource: !Join [ '/', [ !GetAtt Packages.Arn, '*' ] ]
+          PolicyName: PackagesBucketAccess
+        -
+          PolicyDocument:
+            Version: '2012-10-17'
+            Statement:
+              -
+                Effect: Allow
+                Action: ec2:RunInstances
+                Resource:
+                  - !Sub arn:${AWS::Partition}:ec2:${AWS::Region}:${AWS::AccountId}:instance/*
+                  - !Sub arn:${AWS::Partition}:ec2:${AWS::Region}:${AWS::AccountId}:network-interface/*
+                  - !Sub arn:${AWS::Partition}:ec2:${AWS::Region}:${AWS::AccountId}:security-group/*
+                  - !Sub arn:${AWS::Partition}:ec2:${AWS::Region}:${AWS::AccountId}:subnet/*
+                  - !Sub arn:${AWS::Partition}:ec2:${AWS::Region}:${AWS::AccountId}:volume/*
+                  - !Sub
+                      - arn:${Partition}:ec2:${Region}::image/${AmiId}
+                      - Partition: !Ref AWS::Partition
+                        Region: !Ref AWS::Region
+                        AmiId: !FindInMap [ BuildProxy, !Ref 'AWS::Region', AmiId ]
+              -
+                Effect: Allow
+                Action: iam:PassRole
+                Resource: !GetAtt BuildProxyRole.Arn
+          PolicyName: BuildProxyLaunchAccess
+  Py3Vend:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: handler.vend
+      Runtime: python3.6
+      CodeUri: vendor/
+      Timeout: 300
+      Role: !GetAtt VendRole.Arn
+      Environment:
+        Variables:
+          BUCKET: !Ref Packages
+          BUILD_PROXY_PROFILE: !Ref BuildProxyProfile
+          BUILD_PROXY_AMI: !FindInMap [ BuildProxy, !Ref 'AWS::Region', AmiId ]
+      Events:
+        Vend:
+          Type: Api
+          Properties:
+            Path: /3/vend/{requirements}
+            Method: post
+            RestApiId: !Ref API
+  Py2Vend:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: handler.vend
+      Runtime: python2.7
+      CodeUri: vendor/
+      Timeout: 300
+      Role: !GetAtt VendRole.Arn
+      Environment:
+        Variables:
+          BUCKET: !Ref Packages
+          BUILD_PROXY_PROFILE: !Ref BuildProxyProfile
+          BUILD_PROXY_AMI: !FindInMap [ BuildProxy, !Ref 'AWS::Region', AmiId ]
+      Events:
+        Vend:
+          Type: Api
+          Properties:
+            Path: /2/vend/{requirements}
+            Method: post
+            RestApiId: !Ref API
+  API:
+    Type: AWS::Serverless::Api
+    Properties:
+      StageName: api
+      DefinitionBody:
+        swagger: '2.0'
+        info:
+          title: Vendor
+          version: !Ref Version
+        schemes:
+          - "https"
+        paths:
+          /3/vend/{requirements}:
+            post:
+              consumes:
+                - application/json
+              produces:
+                - application/json
+              responses:
+                '200':
+                  description: >-
+                    Build package & dependency wheels for Python 3.
+                    Returns a list of URLs to the package & dependency wheels.
+                  schema:
+                    $ref: '#/definitions/packageList'
+              x-amazon-apigateway-integration:
+                responses:
+                  default:
+                    statusCode: '200'
+                uri: !Sub arn:${AWS::Partition}:apigateway:${AWS::Region}:lambda:path/2015-03-31/functions/${Py3Vend.Arn}/invocations
+                passthroughBehavior: when_no_match
+                httpMethod: POST
+                contentHandling: CONVERT_TO_TEXT
+                type: aws_proxy
+            parameters:
+              - name: requirements
+                in: path
+                required: true
+                type: string
+          /2/vend/{requirements}:
+            post:
+              consumes:
+                - application/json
+              produces:
+                - application/json
+              responses:
+                '200':
+                  description: >-
+                    Build package & dependency wheels for Python 2.
+                    Returns a list of URLs to the package & dependency wheels.
+                  schema:
+                    $ref: '#/definitions/packageList'
+              x-amazon-apigateway-integration:
+                responses:
+                  default:
+                    statusCode: '200'
+                uri: !Sub arn:${AWS::Partition}:apigateway:${AWS::Region}:lambda:path/2015-03-31/functions/${Py2Vend.Arn}/invocations
+                passthroughBehavior: when_no_match
+                httpMethod: POST
+                contentHandling: CONVERT_TO_TEXT
+                type: aws_proxy
+            parameters:
+              - name: requirements
+                in: path
+                required: true
+                type: string
+        definitions:
+          packageList:
+            type: object
+            properties:
+              packages:
+                type: list
+                items:
+                  type: string
+
+Outputs:
+  Version:
+    Value: !Ref Version
+  ServiceURL:
+    Value: !Sub https://${API}.execute-api.${AWS::Region}.amazonaws.com/api/

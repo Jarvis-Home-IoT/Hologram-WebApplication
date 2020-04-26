@@ -1,0 +1,765 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="86be6206-761c-45d8-b0ab-ee91ba970017" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/js/bootstrap.min.js" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="Javis" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/static/js/bootstrap.min.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="95">
+              <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/run.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="114">
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+              <folding>
+                <element signature="e#0#12#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="17" column="34" lean-forward="true" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+              <folding>
+                <element signature="e#65#88#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/.flaskenv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="19">
+              <caret line="1" column="9" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/appengine_config.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="95">
+              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/app.yaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/main/index.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2641">
+              <caret line="150" selection-start-line="150" selection-end-line="150" />
+              <folding>
+                <element signature="e#63#171#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/static/js/fastclick.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="114">
+              <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/static/js/demo.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/requirements.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="76">
+              <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>date</find>
+      <find>col-2</find>
+      <find>mb-10</find>
+      <find>button</find>
+      <find>card</find>
+      <find>col</find>
+      <find>.col-x</find>
+      <find>vertical-align</find>
+      <find>mb</find>
+      <find>table</find>
+      <find>table-</find>
+      <find>col-</find>
+      <find>fa</find>
+      <find>chat-te</find>
+      <find>send</find>
+      <find>music</find>
+      <find>temptemp</find>
+      <find>index</find>
+      <find>ininital</find>
+      <find>can-toggle switch</find>
+      <find>can-toggle__switch</find>
+      <find>attr</find>
+      <find>checked</find>
+      <find>light</find>
+      <find>can-toggle-s</find>
+      <find>data-checked</find>
+      <find>can-toggle--size-small</find>
+      <find>weather</find>
+      <find>info</find>
+      <find>week_day</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/app/templates/index.html" />
+        <option value="$PROJECT_DIR$/app/index.py" />
+        <option value="$PROJECT_DIR$/app/__init__.py" />
+        <option value="$PROJECT_DIR$/app/.env.py" />
+        <option value="$PROJECT_DIR$/app/.flaskenv" />
+        <option value="$PROJECT_DIR$/app/static/css/style.css" />
+        <option value="$PROJECT_DIR$/app/.env" />
+        <option value="$PROJECT_DIR$/app/templates/main/chatbot.html" />
+        <option value="$PROJECT_DIR$/app/static/css/bootstrap-extend.css" />
+        <option value="$PROJECT_DIR$/app/static/css/bootstrap.min.css" />
+        <option value="$PROJECT_DIR$/app/static/css/AdminLTE.css" />
+        <option value="$PROJECT_DIR$/app/static/js/weather.js" />
+        <option value="$PROJECT_DIR$/app/static/js/music.js" />
+        <option value="$PROJECT_DIR$/app/static/css/music.css" />
+        <option value="$PROJECT_DIR$/app/static/css/weather.css" />
+        <option value="$USER_HOME$/Downloads/jws-0.1.3/jws-0.1.3/setup.py" />
+        <option value="$PROJECT_DIR$/app/Firebase.py" />
+        <option value="$PROJECT_DIR$/run.py" />
+        <option value="$PROJECT_DIR$/app/static/css/onoff.css" />
+        <option value="$PROJECT_DIR$/app/templates/main/index.html" />
+        <option value="$PROJECT_DIR$/app/static/js/custom.js" />
+        <option value="$PROJECT_DIR$/app/main/index.py" />
+        <option value="$PROJECT_DIR$/app/app.yaml" />
+        <option value="$PROJECT_DIR$/app/static/js/bootstrap.min.js" />
+        <option value="$PROJECT_DIR$/app/requirements.txt" />
+        <option value="$PROJECT_DIR$/app/appengine_config.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="255" />
+    <option name="width" value="1668" />
+    <option name="height" value="1015" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Javis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Javis" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Javis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Javis" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Javis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Javis" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Javis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Javis" type="462c0819:PsiDirectoryNode" />
+              <item name="virtual" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Javis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Javis" type="462c0819:PsiDirectoryNode" />
+              <item name="virtual" type="462c0819:PsiDirectoryNode" />
+              <item name="Lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Javis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Javis" type="462c0819:PsiDirectoryNode" />
+              <item name="virtual" type="462c0819:PsiDirectoryNode" />
+              <item name="Scripts" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\CHOI\PycharmProjects\Hologram\Hologram-Javis-Web-Application\Javis" />
+      <recent name="C:\Users\CHOI\PycharmProjects\Javis\app\static\img" />
+      <recent name="C:\Users\CHOI\PycharmProjects\Javis\app\templates\main" />
+      <recent name="C:\Users\CHOI\PycharmProjects\Javis\app\main" />
+      <recent name="C:\Users\CHOI\PycharmProjects\Javis" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\CHOI\PycharmProjects\Javis\app\static\css" />
+      <recent name="C:\Users\CHOI\PycharmProjects\Javis\app\main" />
+      <recent name="C:\Users\CHOI\PycharmProjects\Javis\app" />
+      <recent name="C:\Users\CHOI\PycharmProjects\Javis\app\static\img" />
+      <recent name="C:\Users\CHOI\PycharmProjects\Javis\app\static\js" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.run (1)">
+    <configuration name="Firebase" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Javis" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/app" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app/Firebase.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="__init__" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Javis" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/app" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app/__init__.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="index" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Javis" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/app/main" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app/main/index.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="run (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Javis" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/run.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="run" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Javis" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="C:\Users\CHOI\PycharmProjects\Javis\run.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.run (1)" />
+        <item itemvalue="Python.__init__" />
+        <item itemvalue="Python.index" />
+        <item itemvalue="Python.Firebase" />
+        <item itemvalue="Python.run" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="86be6206-761c-45d8-b0ab-ee91ba970017" name="Default Changelist" comment="" />
+      <created>1569778621749</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1569778621749</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="204" y="0" width="1334" height="812" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49884528" visible="true" weight="0.21725732" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" sideWeight="0.5011547" side_tool="true" weight="0.19411765" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49867898" weight="0.3352518" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.5639445" visible="true" weight="0.04573171" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39886847" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.861674" weight="0.3062787" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.43605548" side_tool="true" visible="true" weight="0.04573171" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.27857143" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49884528" visible="true" weight="0.19154558" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" sideWeight="0.5011547" side_tool="true" weight="0.19411765" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49867898" weight="0.3352518" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49688667" visible="true" weight="0.407355" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39886847" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5031133" side_tool="true" weight="0.34653464" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.27857143" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout-to-restore>
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.js" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/Hologram-Javis-Web-Application" />
+    </ignored-roots>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/dialogflow_v2/gapic/sessions_client.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="169" selection-start-line="169" selection-end-line="169" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/dialogflow_v2/gapic/transports/sessions_grpc_transport.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="95" selection-start-line="95" selection-end-line="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/google/auth/_default.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="304" selection-start-line="304" selection-end-line="304" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/google/api_core/grpc_helpers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="72" column="49" lean-forward="true" selection-start-line="72" selection-start-column="49" selection-end-line="72" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/main/chatbot.html" />
+    <entry file="file://$PROJECT_DIR$/app/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/static/css/bootstrap-extend.min.css" />
+    <entry file="file://$PROJECT_DIR$/app/static/css/bootstrap-extend.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4541">
+          <caret line="239" column="20" selection-start-line="239" selection-start-column="20" selection-end-line="239" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/static/css/bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="855">
+          <caret line="4" column="41131" selection-start-line="4" selection-start-column="41131" selection-end-line="4" selection-end-column="41131" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/static/css/bootstrap.min2.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret column="3013" selection-start-column="3013" selection-end-column="3013" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/static/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/static/css/weather-icons.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-228" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/static/img/ws22.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/static/img/ws5.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/static/img/ws15.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/static/img/ws1.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/static/css/AdminLTE.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="3102" column="11" lean-forward="true" selection-start-line="3102" selection-start-column="11" selection-end-line="3102" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/static/css/music.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/static/css/skin-blue.min.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/static/img/ws9.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/static/img/ws7.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/jws-0.1.3/jws-0.1.3/setup.py" />
+    <entry file="file://$PROJECT_DIR$/venv/Scripts/setup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="16" column="21" lean-forward="true" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/static/css/site.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret column="2074" selection-start-column="2074" selection-end-column="2074" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/static/css/weather.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="388">
+          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Firebase.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="10" lean-forward="true" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/main/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/static/css/light.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="27" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/firebase.json" />
+    <entry file="file://$PROJECT_DIR$/app/static/js/music.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2462">
+          <caret line="32" column="10" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/static/js/jquery.slimscroll.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/static/js/jquery.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/static/js/adminlte.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="14" lean-forward="true" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/static/css/onoff.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="141" column="45" lean-forward="true" selection-start-line="141" selection-start-column="45" selection-end-line="141" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/static/js/weather.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="21" column="49" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/static/js/custom.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="874">
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/main/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7391">
+          <caret line="389" column="31" selection-start-line="389" selection-start-column="31" selection-end-line="389" selection-end-column="31" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#a#0;n#li#0;n#ul#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#0;n#nav#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/appengine_config.py" />
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.yaml" />
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/flask/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45657">
+          <caret line="2462" column="23" selection-start-line="2462" selection-start-column="23" selection-end-line="2462" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/static/js/bootstrap.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/.flaskenv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="9" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/app.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/main/index.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2641">
+          <caret line="150" selection-start-line="150" selection-end-line="150" />
+          <folding>
+            <element signature="e#63#171#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/static/js/fastclick.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/static/js/demo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="34" lean-forward="true" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+          <folding>
+            <element signature="e#65#88#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/appengine_config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

@@ -1,0 +1,18 @@
+AWSTemplateFormatVersion: '2010-09-09'
+
+Parameters:
+  Version:
+    Description: >
+      Vendor application version.
+    Type: String
+    Default: '0'
+
+Resources:
+  Bucket:
+    Type: AWS::S3::Bucket
+
+Outputs:
+  Version:
+    Value: !Ref Version
+  BucketName:
+    Value: !Ref Bucket
