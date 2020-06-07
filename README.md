@@ -21,12 +21,6 @@
 > - **Elsa Dancing , Display on/off**
 
 ---
-## WEB Screen
-![demo1](https://user-images.githubusercontent.com/32683894/80311610-9ac02680-881b-11ea-9589-f9a089e1a091.jpg)
-
-
-## Image of Chatting System
-![image](https://user-images.githubusercontent.com/32683894/81505332-61aea880-9329-11ea-8922-ba59ab74bad7.png)
 
 ## Dialogflow API
 The chatbot was implemented by linking the crawling weather result value with the Dialogflow API.
@@ -34,10 +28,43 @@ If you ask about the weather through chatting, the weather screen will be update
 
 ---
 
+## Example Code
+- Detect intent_texts ( Call Dialogflow )
+
+```python
+def detect_intent_texts(project_id, session_id, text, language_code):
+    session_client = dialogflow.SessionsClient()
+    session = session_client.session_path(project_id, session_id)
+    if text:
+        text_input = dialogflow.types.TextInput(
+            text=text, language_code=language_code)
+        query_input = dialogflow.types.QueryInput(text=text_input)
+        response = session_client.detect_intent(
+            session=session, query_input=query_input)
+        return response.query_result.fulfillment_text
+```
+
+- Create Webhook  ( Send Dialogflow )
+```python
+# create a route for webhook
+@main.route('/webhook', methods=['GET', 'POST'])
+def webhook():
+    # return response
+    implicit()
+    return make_response(jsonify({'fulfillmentText':results('dialog')}))
+```
 ## How to Use
 1. Create your own dialogflow account.
 2. import the intent.zip into the dialogflow.
 3. Run it on your server.
+
+## WEB Screen
+![demo1](https://user-images.githubusercontent.com/32683894/80311610-9ac02680-881b-11ea-9589-f9a089e1a091.jpg)
+
+
+## Image of Chatting System
+![image](https://user-images.githubusercontent.com/32683894/81505332-61aea880-9329-11ea-8922-ba59ab74bad7.png)
+
 
 # License
 ```xml
